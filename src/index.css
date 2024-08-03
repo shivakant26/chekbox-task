@@ -1,0 +1,30 @@
+.main-class{
+    display: flex;
+    gap: 30px;
+}
+.loading-screen{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    
+}
+.loading-screen p{
+    color: blue;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.selected-Item p{
+    background: gray;
+    color: #ddd;
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+.selected-Item p:nth-child(odd){
+    background: rgb(189, 58, 58);
+    color: #ddd;
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
