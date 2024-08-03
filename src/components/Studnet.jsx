@@ -51,9 +51,15 @@ const Student = () => {
             <Col sm={12} md={6}>
               <div className="selected-Item">
                 <h3>Seleted Data</h3>
-                {selectedData.map((item, index) => {
-                  return <p key={index}>{item}</p>;
-                })}
+                {
+                  selectedData.length > 0 ? (<>
+                    {selectedData.map((item, index) => {
+                      return <p key={index}>{item}</p>;
+                    })}
+                  </>) : (<>
+                  <h5 className="error">Record Not Selected</h5>
+                  </>)
+                }
               </div>
             </Col>
           </Row>

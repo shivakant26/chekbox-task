@@ -15,3 +15,7 @@ ul li a{
     color: #fff;
     font-size: 18px;
 }
+.error{
+    color: tomato;
+    font-weight: 200;
+}

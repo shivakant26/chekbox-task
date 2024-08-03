@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Loginpopup = ({ show, setShow }) => {
   const navigate = useNavigate();
@@ -15,6 +16,10 @@ const Loginpopup = ({ show, setShow }) => {
   const handleSubmit = () => {
     if (state.userName === "admin" && state.password === "123456") {
       localStorage.setItem("token", "125dsf3df5s1df2351fsd3ff");
+      Swal.fire({
+        icon: "success",
+        text: "Login succussfully",
+      });
       navigate("/dashboard", { replace: true });
       setShow(false);
     }
